@@ -1478,8 +1478,8 @@ proto.animate = function() {
 
 // left/top positioning
 proto.setLeftTop = function() {
-  this.element.style.left = this.position.x + 'px';
-  this.element.style.top  = this.position.y + 'px';
+  this.element.style.setProperty("left", this.position.x + 'px', "important");
+  this.element.style.setProperty("top", this.position.y + 'px', "important");
 };
 
 proto.positionDrag = function() {
